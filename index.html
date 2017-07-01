@@ -7,6 +7,7 @@
     <script src="jquery/jquery-2.0.3.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Indie%20Flower" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="myOwn.js"></script>
     <style>
         .navbar, .navbar-brand{
@@ -15,12 +16,17 @@
             
         }
         body{
-            background:url(https://images8.alphacoders.com/584/thumb-1920-584366.jpg);
-            background-size:cover;
-            /*height:1080px;*/
             font-family:Indie Flower, Arial;
         }
         
+        .pageOne{
+            background:url(https://images8.alphacoders.com/584/thumb-1920-584366.jpg);
+            height: 800px; 
+            /*Center and scale the image nicely */
+            background-position: center center; 
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
         .name-header{
             color:#ced5de;
             font-size:3.0em;
@@ -31,9 +37,44 @@
         }
         
         #motto-background{
-            padding:0.5;
+            padding:0.75em;
+            width:75%;
+            margin:0 auto;
             background-color:black;
+            opacity: 0.7;
+            filter: alpha(opacity=50); /* For IE8 and earlier */
         }
+        
+        #buttons{
+            background-color:black;
+            opacity:0.7;
+            margin:0 auto;
+        }
+        
+        .pageTwo{
+            background:url(http://www.hdwallpapers.in/walls/nature_call-wide.jpg);
+            height:800px;
+            /*Center and scale the image nicely */
+            background-position: center center; 
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        p{
+            font-size:2.0em;
+        }
+        
+        #paragraph-background{
+            padding:0.5em;
+            width:50%;
+            margin:0 auto;
+            background-color:#2f3f52;
+            opacity: 0.78;
+            filter: alpha(opacity=50); /* For IE8 and earlier */
+            color:#2ecc71;
+        }
+        
+        
         
         
     </style>
@@ -45,12 +86,14 @@
         <div class="navbar-header">
           <a class="navbar-brand" href="#">Nafissa's League</a>
         </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">About Me</a></li>
-        </ul>
+        <!--<ul class="nav navbar-nav">-->
+        <!--  <li class="active"><a href="#">About Me</a></li>-->
+        <!--</ul>-->
         <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">About Me</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Contact Me</a></li>
+
         </ul>
       </div>
     </nav>
@@ -62,11 +105,23 @@
     
     <!--how to make them look like social media buttons-->
     <div class="btn-List text-center">
-        <a class="btn btn-default" href="#">Twitter</a>
-        <a class="btn btn-default" href="#"><i class="fa fa-github">Github</i></a>
-        <a class="btn btn-default" href="#">Linkedin</a>
+        <span id="buttons">
+        <button type="button" class="btn btn-git"><i class="fa fa-github left"></i>Github</button>
+        <button type="button" class="btn btn-li"><i class="fa fa-linkedin left"></i> Linkedin</button>
+        <button type="button" class="btn btn-tw"><i class="fa fa-twitter left">Twitter</i></button>
+        </span>
     </div>    
-</div>   
+</div> 
+<div class="pageTwo">
+    <div class="row">
+        <div class="col-md-6 text-center" id="paragraph-background">
+            <h2>Nafissa Hassan</h2>
+            <p>Hello there</p>
+        </div>
+        <div class="col-md-6"></div>
+    </div>
+    
+</div>
     
 </body>
 </html>

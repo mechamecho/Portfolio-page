@@ -62,6 +62,8 @@
         
         p{
             font-size:2.0em;
+            margin-left:10%;
+            margin-bottom:0;
         }
         
         #paragraph-background{
@@ -81,24 +83,87 @@
             border-radius: 50%;
         }
         
+        .pageThree{
+            background:url(http://uwf.edu/media/university-of-west-florida/offices/student-affairs/counseling--psychological-services/plant-growth.jpg);
+            height:800px;
+            margin-top:-1.5%;
+            /*Center and scale the image nicely */
+            background-position: center center; 
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
         
+        #pageThree-header{
+            padding-top:5%;
+        }
+        #pageThree-header,#white-text{
+            color:#4a742a;
+        }
+        
+        #table-background{
+            padding:0.5em;
+            width:50%;
+            margin:0 auto;
+            background-color:#2f3f52;
+            opacity: 0.78;
+            filter: alpha(opacity=50); /* For IE8 and earlier */
+            color:#2ecc71;
+        }
+        
+        #tributePage{
+            height:150%;
+            width:100%;
+        }
+        
+        #pageFour-header{
+            padding-top:5%;
+        }
+        .pageFour{
+            background:url(http://www.cchrflorida.org/wp-content/uploads/2015/11/Old-Phone.jpg);
+            height:800px;
+            margin-top:-1.5%;
+            /*Center and scale the image nicely */
+            background-position: center center; 
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .contact-form{
+            margin-left:60%;
+        }
+        
+        .form-item{
+            padding:2em 2em;
+        }
+        #form-table{
+            padding:0.5em;
+            width:80;
+            margin:0 auto;
+            background-color:#c19a21;
+            opacity: 0.78;
+            filter: alpha(opacity=50); /* For IE8 and earlier */
+            color:#363636;
+            
+            font-size:1.5em;
+            
+        }
         
     </style>
 </head>
 <body>
-<div class="pageOne">
-    <nav class="navbar navbar-inverse">
+<div class="pageOne" id="one">
+    <nav class="navbar navbar-inverse page-navigation">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">Nafissa's League</a>
+          <a class="navbar-brand" href="#one">Nafissa's League</a>
         </div>
         <!--<ul class="nav navbar-nav">-->
         <!--  <li class="active"><a href="#">About Me</a></li>-->
         <!--</ul>-->
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">About Me</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact Me</a></li>
+          <li class="active"><a href="#two">About Me</a></li>
+          <li><a href="#three">Portfolio</a></li>
+          <li><a href="#four">Contact Me</a></li>
 
         </ul>
       </div>
@@ -112,13 +177,13 @@
     <!--how to make them look like social media buttons-->
     <div class="btn-List text-center">
         <span id="buttons">
-        <button type="button" class="btn btn-git"><i class="fa fa-github left"></i>Github</button>
-        <button type="button" class="btn btn-li"><i class="fa fa-linkedin left"></i> Linkedin</button>
-        <button type="button" class="btn btn-tw"><i class="fa fa-twitter left">Twitter</i></button>
+        <a href="https://github.com/mechamecho"><button type="button" class="btn btn-git"><i class="fa fa-github left"></i>Github</button></a>
+        <a href="https://www.linkedin.com/in/nafissa-hassan-a31266131"><button type="button" class="btn btn-li"><i class="fa fa-linkedin left"></i> Linkedin</button></a>
+        <a href="https://twitter.com/nimiko_92?lang=en"><button type="button" class="btn btn-tw"><i class="fa fa-twitter left">Twitter</i></button></a>
         </span>
     </div>    
 </div> 
-<div class="pageTwo">
+<div class="pageTwo" id="two">
     <div class="row">
         <div class="col-md-6 text-center" id="paragraph-background">
             <h2>Nafissa Hassan</h2>
@@ -127,7 +192,7 @@
             that is humbling.  My journey started in Germany, 
             where I spent most of my childhood, my Family moved to Sudan when I was 11. I did three years of mechanical engineering
             at the University of Khartoum, then moved back to Germany. There I refreshed my German language, by visiting a preparatory college
-            for a year, that welcomes students from all over the world. It was eye opening to interact with so many different culture. It is an irreplacable experience. 
+            for a year, that welcomes students from all over the world. It was eye opening to interact with so many different cultures. It is an irreplacable experience. 
             Learned Java, and Python for 5 months, and now working on JavaScript. Working on becoming a full-stack developer.</p>
         </div>
         <div class="col-md-6">
@@ -135,6 +200,56 @@
         </div>
     </div>
     
+</div>
+<div class="pageThree text-center" id="three">
+    <h1 id="pageThree-header">My first Portfolio</h1>
+    <h2 id="white-text">some of my projects</h2>
+    <div class="row" id="table-background">
+        <div class="col-md-6">
+        <a href="https://node-js-livepurposefully.c9users.io/Tribute-page/main/tribute.html">
+            <img src="images/TributePage.jpg" id="tributePage">Tribute Page</a>  
+        </div>
+        <div class="col-md-6">
+            <a href="http://placeholder.com"><img src="http://via.placeholder.com/250x150"></a>    
+        </div>
+    </div>
+</div>
+<div class="pageFour text-center" id="four">
+    <h1 id="pageFour-header">Contact me</h1>
+    <hr/>
+    <!--<ul style="list-style: none">-->
+    <!--    <form class="contact-form">-->
+    <!--        <li><span class="form-item">Name<input type="text" value="Name"/></span></li>-->
+    <!--        <li><span class="form-item">Email<input type="text" value="Email"/></span></li>-->
+    <!--        <li><span class="form-item">Message<textarea value="Message"/></span></li>-->
+    <!--    </form>-->
+    <!--</ul>-->
+    <div id="form-table">
+        <div class="row" >
+        <div class="col-md-1 closer">
+            <span class="form-item">Name</span>   
+        </div>
+        <div class="col-md-1">
+            <input type="text" value="Name"/>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-md-1">
+            <span class="form-item">Email</span>   
+        </div>
+        <div class="col-md-1">
+            <input type="text" value="Email"/>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-md-1">
+            <span class="form-item">Message</span>   
+        </div>
+        <div class="col-md-1">
+            <textarea value="Message"></textarea>
+        </div>
+    </div>
+</div>
 </div>
     
 </body>

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <!-- Placed at the end of the document so the pages load faster -->
     <script src="jquery/jquery-2.0.3.min.js"></script>
@@ -17,6 +18,7 @@
         }
         body{
             font-family:Indie Flower, Arial;
+            font-size: calc(0.75em + 1vmin);
         }
         
         .pageOne{
@@ -61,14 +63,25 @@
         }
         
         p{
-            font-size:2.0em;
+            font-size: calc(1.2em + 0.3vmin);
             margin-left:10%;
             margin-bottom:0;
         }
         
-        #paragraph-background{
-            padding:0.5em;
+        @media only screen and (min-width: 768px){
+        .paragraph{
+            font-size: 2em;
+            
+        }
+        .me{
             width:50%;
+            height:50%;
+        }
+        }
+        
+        #paragraph-background{
+            /*padding:1em;*/
+            width:53%;
             margin:0 auto;
             background-color:#2f3f52;
             opacity: 0.78;
@@ -77,9 +90,9 @@
         }
         
         .me{
-            height:40%;
-            width:40%;
-            margin-left:50%;
+            height:70%;
+            width:70%;
+            /*margin-left:50%;*/
             border-radius: 50%;
         }
         
@@ -114,6 +127,11 @@
             height:150%;
             width:100%;
         }
+        #placeholder-image img{
+            height:90%;
+            width:90%;
+            
+        }
         
         #pageFour-header{
             padding-top:5%;
@@ -133,11 +151,13 @@
         }
         
         .form-item{
-            padding:2em 2em;
+
+            position:relative;
+            width:40%;
         }
         #form-table{
             padding:0.5em;
-            width:80;
+            width:100%;
             margin:0 auto;
             background-color:#c19a21;
             opacity: 0.78;
@@ -185,9 +205,9 @@
 </div> 
 <div class="pageTwo" id="two">
     <div class="row">
-        <div class="col-md-6 text-center" id="paragraph-background">
-            <h2>Nafissa Hassan</h2>
-            <p>Learning new things everyday. Love problem solving, and math. I believe every person in this world
+        <div class="col-md-6 col-xs-8" id="paragraph-background">
+            <h2 class="text-center">Nafissa Hassan</h2>
+            <p class="text-center paragraph">Learning new things everyday. Love problem solving, and math. I believe every person in this world
             has their personal mission, and I am still figuring out mine. An environment of positivity and support is the best for growth. I will never know everything, and knowing 
             that is humbling.  My journey started in Germany, 
             where I spent most of my childhood, my Family moved to Sudan when I was 11. I did three years of mechanical engineering
@@ -195,7 +215,7 @@
             for a year, that welcomes students from all over the world. It was eye opening to interact with so many different cultures. It is an irreplacable experience. 
             Learned Java, and Python for 5 months, and now working on JavaScript. Working on becoming a full-stack developer.</p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4 col-xs-5">
             <img src="https://i.ytimg.com/vi/W-PBFMECvTE/maxresdefault.jpg" class="me">
         </div>
     </div>
@@ -209,7 +229,7 @@
         <a href="https://node-js-livepurposefully.c9users.io/Tribute-page/main/tribute.html">
             <img src="images/TributePage.jpg" id="tributePage">Tribute Page</a>  
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" id="placeholder-image">
             <a href="http://placeholder.com"><img src="http://via.placeholder.com/250x150"></a>    
         </div>
     </div>
@@ -226,26 +246,26 @@
     <!--</ul>-->
     <div id="form-table">
         <div class="row" >
-        <div class="col-md-1 closer">
+        <div class="col-md-2 col-xs-4">
             <span class="form-item">Name</span>   
         </div>
-        <div class="col-md-1">
+        <div class="col-md-2 col-xs-8">
             <input type="text" value="Name"/>
         </div>
         </div>
         <div class="row">
-        <div class="col-md-1">
+        <div class="col-md-2 col-xs-4">
             <span class="form-item">Email</span>   
         </div>
-        <div class="col-md-1">
+        <div class="col-md-2 col-xs-8">
             <input type="text" value="Email"/>
         </div>
         </div>
         <div class="row">
-        <div class="col-md-1">
+        <div class="col-md-2 col-xs-4">
             <span class="form-item">Message</span>   
         </div>
-        <div class="col-md-1">
+        <div class="col-md-2 col-xs-8">
             <textarea value="Message"></textarea>
         </div>
     </div>

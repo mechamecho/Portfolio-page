@@ -1,289 +1,275 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<!-- Placed at the end of the document so the pages load faster -->
-    <script src="jquery/jquery-2.0.3.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Indie%20Flower" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="myOwn.js"></script>
-    <style>
-        .navbar, .navbar-brand{
-            background-color:#211f24;
-            font-size:1.7em;
-            
-        }
-        body{
-            font-family:Indie Flower, Arial;
-            font-size: calc(0.75em + 1vmin);
-        }
-        
-        .pageOne{
-            background:url(https://images8.alphacoders.com/584/thumb-1920-584366.jpg);
-            height: 800px; 
-            /*Center and scale the image nicely */
-            background-position: center center; 
-            background-repeat: no-repeat;
-            background-size: cover;
-            }
-        .name-header{
-            color:#ced5de;
-            font-size:3.0em;
-        }
-        
-        #intro{
-            color:#ced5de;
-        }
-        
-        #motto-background{
-            padding:0.75em;
-            width:75%;
-            margin:0 auto;
-            background-color:black;
-            opacity: 0.7;
-            filter: alpha(opacity=50); /* For IE8 and earlier */
-        }
-        
-        #buttons{
-            background-color:black;
-            opacity:0.7;
-            margin:0 auto;
-        }
-        
-        .pageTwo{
-            background:url(http://www.hdwallpapers.in/walls/nature_call-wide.jpg);
-            height:800px;
-            /*Center and scale the image nicely */
-            background-position: center center; 
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        
-        p{
-            font-size: calc(1.2em + 0.3vmin);
-            margin-left:10%;
-            margin-bottom:0;
-        }
-        
-        @media only screen and (min-width: 768px){
-        .paragraph{
-            font-size: 2em;
-            
-        }
-        .me{
-            width:50%;
-            height:50%;
-        }
-        }
-        
-        #paragraph-background{
-            /*padding:1em;*/
-            width:53%;
-            margin:0 auto;
-            background-color:#2f3f52;
-            opacity: 0.78;
-            filter: alpha(opacity=50); /* For IE8 and earlier */
-            color:#2ecc71;
-        }
-        
-        .me{
-            height:70%;
-            width:70%;
-            /*margin-left:50%;*/
-            border-radius: 50%;
-        }
-        
-        .pageThree{
-            background:url(http://uwf.edu/media/university-of-west-florida/offices/student-affairs/counseling--psychological-services/plant-growth.jpg);
-            height:800px;
-            margin-top:-1.5%;
-            /*Center and scale the image nicely */
-            background-position: center center; 
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        
-        #pageThree-header{
-            padding-top:5%;
-        }
-        #pageThree-header,#white-text{
-            color:#4a742a;
-        }
-        
-        #table-background{
-            padding:0.5em;
-            width:50%;
-            margin:0 auto;
-            background-color:#2f3f52;
-            opacity: 0.78;
-            filter: alpha(opacity=50); /* For IE8 and earlier */
-            color:#2ecc71;
-        }
-        
-        #tributePage{
-            height:150%;
-            width:100%;
-        }
-        #placeholder-image img{
-            height:90%;
-            width:90%;
-            
-        }
-        
-        #pageFour-header{
-            padding-top:5%;
-        }
-        .pageFour{
-            background:url(http://www.cchrflorida.org/wp-content/uploads/2015/11/Old-Phone.jpg);
-            height:800px;
-            margin-top:-1.5%;
-            /*Center and scale the image nicely */
-            background-position: center center; 
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        
-        .contact-form{
-            margin-left:60%;
-        }
-        
-        .form-item{
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Document</title><!-- Placed at the end of the document so the pages load faster -->
 
-            position:relative;
-            width:40%;
-        }
-        #form-table{
-            padding:0.5em;
-            width:100%;
-            margin:0 auto;
-            background-color:#c19a21;
-            opacity: 0.78;
-            filter: alpha(opacity=50); /* For IE8 and earlier */
-            color:#363636;
-            
-            font-size:1.5em;
-            
-        }
-        .myfooter {
-        height: 50px;
-        background:#794044;
-        opacity: 0.9;
-        filter: alpha(opacity=50); /* For IE8 and earlier */
-        color:black;
-}
-        
-    </style>
+	<script src="jquery/jquery-2.0.3.min.js">
+	</script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie%20Flower" rel="stylesheet" type="text/css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="myOwn.js">
+	</script>
+	<style>
+	       .navbar, .navbar-brand{
+	           background-color:#211f24;
+	           font-size:1.7em;
+	           
+	       }
+	       body{
+	           font-family:Indie Flower, Arial;
+	           font-size: calc(0.75em + 1vmin);
+	       }
+	       
+	       .pageOne{
+	           background:url(https://images8.alphacoders.com/584/thumb-1920-584366.jpg);
+	           height: 800px; 
+	           /*Center and scale the image nicely */
+	           background-position: center center; 
+	           background-repeat: no-repeat;
+	           background-size: cover;
+	           }
+	       .name-header{
+	           color:#ced5de;
+	           font-size:3.0em;
+	       }
+	       
+	       #intro{
+	           color:#ced5de;
+	       }
+	       
+	       #motto-background{
+	           padding:0.75em;
+	           width:75%;
+	           margin:0 auto;
+	           background-color:black;
+	           opacity: 0.7;
+	           filter: alpha(opacity=50); /* For IE8 and earlier */
+	       }
+	       
+	       #buttons{
+	           background-color:black;
+	           opacity:0.7;
+	           margin:0 auto;
+	       }
+	       
+	       .pageTwo{
+	           background:url(http://www.hdwallpapers.in/walls/nature_call-wide.jpg);
+	           height:800px;
+	           /*Center and scale the image nicely */
+	           background-position: center center; 
+	           background-repeat: no-repeat;
+	           background-size: cover;
+	       }
+	       
+	       p{
+	           font-size: calc(1.2em + 0.3vmin);
+	           margin-left:10%;
+	           margin-bottom:0;
+	       }
+	       
+	       @media only screen and (min-width: 768px){
+	       .paragraph{
+	           font-size: 2em;
+	           
+	       }
+	       .me{
+	           width:50%;
+	           height:50%;
+	       }
+	       }
+	       
+	       #paragraph-background{
+	           /*padding:1em;*/
+	           width:53%;
+	           margin:0 auto;
+	           background-color:#2f3f52;
+	           opacity: 0.78;
+	           filter: alpha(opacity=50); /* For IE8 and earlier */
+	           color:#2ecc71;
+	       }
+	       
+	       .me{
+	           height:70%;
+	           width:70%;
+	           /*margin-left:50%;*/
+	           border-radius: 50%;
+	       }
+	       
+	       .pageThree{
+	           background:url(http://uwf.edu/media/university-of-west-florida/offices/student-affairs/counseling--psychological-services/plant-growth.jpg);
+	           height:800px;
+	           margin-top:-1.5%;
+	           /*Center and scale the image nicely */
+	           background-position: center center; 
+	           background-repeat: no-repeat;
+	           background-size: cover;
+	       }
+	       
+	       #pageThree-header{
+	           padding-top:5%;
+	       }
+	       #pageThree-header,#white-text{
+	           color:#4a742a;
+	       }
+	       
+	       #table-background{
+	           padding:0.5em;
+	           width:50%;
+	           margin:0 auto;
+	           background-color:#2f3f52;
+	           opacity: 0.78;
+	           filter: alpha(opacity=50); /* For IE8 and earlier */
+	           color:#2ecc71;
+	       }
+	       
+	       #tributePage{
+	           height:150%;
+	           width:100%;
+	       }
+	       #placeholder-image img{
+	           height:90%;
+	           width:90%;
+	           
+	       }
+	       
+	       #pageFour-header{
+	           padding-top:5%;
+	       }
+	       .pageFour{
+	           background:url(http://www.cchrflorida.org/wp-content/uploads/2015/11/Old-Phone.jpg);
+	           height:800px;
+	           margin-top:-1.5%;
+	           /*Center and scale the image nicely */
+	           background-position: center center; 
+	           background-repeat: no-repeat;
+	           background-size: cover;
+	       }
+	       
+	       .contact-form{
+	           margin-left:60%;
+	       }
+	       
+	       .form-item{
+
+	           position:relative;
+	           width:40%;
+	       }
+	       #form-table{
+	           padding:0.5em;
+	           width:100%;
+	           margin:0 auto;
+	           background-color:#c19a21;
+	           opacity: 0.78;
+	           filter: alpha(opacity=50); /* For IE8 and earlier */
+	           color:#363636;
+	           
+	           font-size:1.5em;
+	           
+	       }
+	       .myfooter {
+	       height: 50px;
+	       background:#794044;
+	       opacity: 0.9;
+	       filter: alpha(opacity=50); /* For IE8 and earlier */
+	       color:black;
+	       }
+	       
+	</style>
 </head>
 <body>
-<div class="pageOne" id="one">
-    <nav class="navbar navbar-inverse page-navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#one">Nafissa's League</a>
-        </div>
-        <!--<ul class="nav navbar-nav">-->
-        <!--  <li class="active"><a href="#">About Me</a></li>-->
-        <!--</ul>-->
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#two">About Me</a></li>
-          <li><a href="#three">Portfolio</a></li>
-          <li><a href="#four">Contact Me</a></li>
-
-        </ul>
-      </div>
-    </nav>
-    
-    <div class="text-center" id="intro">
-        <h1 class="name-header text-center">Nafissa Hassan</h1>
-        <h3 id="motto-background">Always striving to do my best, because life is too precious to waste</h3>
-    </div>
-    
-    <!--how to make them look like social media buttons-->
-    <div class="btn-List text-center">
-        <span id="buttons">
-        <a href="https://github.com/mechamecho"><button type="button" class="btn btn-git"><i class="fa fa-github left"></i>Github</button></a>
-        <a href="https://www.linkedin.com/in/nafissa-hassan-a31266131"><button type="button" class="btn btn-li"><i class="fa fa-linkedin left"></i> Linkedin</button></a>
-        <a href="https://twitter.com/nimiko_92?lang=en"><button type="button" class="btn btn-tw"><i class="fa fa-twitter left">Twitter</i></button></a>
-        </span>
-    </div>    
-</div> 
-<div class="pageTwo" id="two">
-    <div class="row">
-        <div class="col-md-6 col-xs-8" id="paragraph-background">
-            <h2 class="text-center">Nafissa Hassan</h2>
-            <p class="text-center paragraph">Learning new things everyday. Love problem solving, and math. I believe every person in this world
-            has their personal mission, and I am still figuring out mine. An environment of positivity and support is the best for growth. I will never know everything, and knowing 
-            that is humbling.  My journey started in Germany, 
-            where I spent most of my childhood, my Family moved to Sudan when I was 11. I did three years of mechanical engineering
-            at the University of Khartoum, then moved back to Germany. There I refreshed my German language, by visiting a preparatory college
-            for a year, that welcomes students from all over the world. It was eye opening to interact with so many different cultures. It is an irreplacable experience. 
-            Learned Java, and Python for 5 months, and now working on JavaScript. Working on becoming a full-stack developer.</p>
-        </div>
-        <div class="col-md-4 col-xs-5">
-            <img src="https://i.ytimg.com/vi/W-PBFMECvTE/maxresdefault.jpg" class="me">
-        </div>
-    </div>
-    
-</div>
-<div class="pageThree text-center" id="three">
-    <h1 id="pageThree-header">My first Portfolio</h1>
-    <h2 id="white-text">some of my projects</h2>
-    <div class="row" id="table-background">
-        <div class="col-md-6">
-        <a href="https://node-js-livepurposefully.c9users.io/Tribute-page/main/tribute.html">
-            <img src="images/TributePage.jpg" id="tributePage">Tribute Page</a>  
-        </div>
-        <div class="col-md-6" id="placeholder-image">
-            <a href="http://placeholder.com"><img src="http://via.placeholder.com/250x150"></a>    
-        </div>
-    </div>
-</div>
-<div class="pageFour text-center" id="four">
-    <h1 id="pageFour-header">Contact me</h1>
-    <hr/>
-    <!--<ul style="list-style: none">-->
-    <!--    <form class="contact-form">-->
-    <!--        <li><span class="form-item">Name<input type="text" value="Name"/></span></li>-->
-    <!--        <li><span class="form-item">Email<input type="text" value="Email"/></span></li>-->
-    <!--        <li><span class="form-item">Message<textarea value="Message"/></span></li>-->
-    <!--    </form>-->
-    <!--</ul>-->
-    <div id="form-table">
-        <div class="row" >
-        <div class="col-md-2 col-xs-4">
-            <span class="form-item">Name</span>   
-        </div>
-        <div class="col-md-2 col-xs-8">
-            <input type="text" value="Name"/>
-        </div>
-        </div>
-        <div class="row">
-        <div class="col-md-2 col-xs-4">
-            <span class="form-item">Email</span>   
-        </div>
-        <div class="col-md-2 col-xs-8">
-            <input type="text" value="Email"/>
-        </div>
-        </div>
-        <div class="row">
-        <div class="col-md-2 col-xs-4">
-            <span class="form-item">Message</span>   
-        </div>
-        <div class="col-md-2 col-xs-8">
-            <textarea value="Message"></textarea>
-        </div>
-    </div>
-</div>
-</div>
-
-<footer class="myfooter">
-  <p>Posted by: Nafissa Hassan</p>
-  <p>Contact information: <a href="mailto:nafissa_92@hotmail.com">
-  nafissa_92@hotmail.com</a>.</p>
-</footer>
-    
+	<div class="pageOne" id="one">
+		<nav class="navbar navbar-inverse page-navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#one">Nafissa's League</a>
+				</div><!--<ul class="nav navbar-nav">-->
+				<!--  <li class="active"><a href="#">About Me</a></li>-->
+				<!--</ul>-->
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active">
+						<a href="#two">About Me</a>
+					</li>
+					<li>
+						<a href="#three">Portfolio</a>
+					</li>
+					<li>
+						<a href="#four">Contact Me</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="text-center" id="intro">
+			<h1 class="name-header text-center">Nafissa Hassan</h1>
+			<h3 id="motto-background">Always striving to do my best, because life is too precious to waste</h3>
+		</div><!--how to make them look like social media buttons-->
+		<div class="btn-List text-center">
+			<span id="buttons"><a href="https://github.com/mechamecho"><button class="btn btn-git" type="button"><span id="buttons"><i class="fa fa-github left"></i>Github</span></button></a> <a href="https://www.linkedin.com/in/nafissa-hassan-a31266131"><button class="btn btn-li" type="button"><i class="fa fa-linkedin left"></i> Linkedin</button></a> <a href="https://twitter.com/nimiko_92?lang=en"><button class="btn btn-tw" type="button"><i class="fa fa-twitter left">Twitter</i></button></a></span>
+		</div>
+	</div>
+	<div class="pageTwo" id="two">
+		<div class="row">
+			<div class="col-md-6 col-xs-8" id="paragraph-background">
+				<h2 class="text-center">Nafissa Hassan</h2>
+				<p class="text-center paragraph">Learning new things everyday. Love problem solving, and math. I believe every person in this world has their personal mission, and I am still figuring out mine. An environment of positivity and support is the best for growth. I will never know everything, and knowing that is humbling. My journey started in Germany, where I spent most of my childhood, my Family moved to Sudan when I was 11. I did three years of mechanical engineering at the University of Khartoum, then moved back to Germany. There I refreshed my German language, by visiting a preparatory college for a year, that welcomes students from all over the world. It was eye opening to interact with so many different cultures. It is an irreplacable experience. Learned Java, and Python for 5 months, and now working on JavaScript. Working on becoming a full-stack developer.</p>
+			</div>
+			<div class="col-md-4 col-xs-5"><img class="me" src="https://i.ytimg.com/vi/W-PBFMECvTE/maxresdefault.jpg"></div>
+		</div>
+	</div>
+	<div class="pageThree text-center" id="three">
+		<h1 id="pageThree-header">My first Portfolio</h1>
+		<h2 id="white-text">some of my projects</h2>
+		<div class="row" id="table-background">
+			<div class="col-md-6">
+				<a href="https://node-js-livepurposefully.c9users.io/Tribute-page/main/tribute.html"><img id="tributePage" src="images/TributePage.jpg">Tribute Page</a>
+			</div>
+			<div class="col-md-6" id="placeholder-image">
+				<a href="http://placeholder.com"><img src="http://via.placeholder.com/250x150"></a>
+			</div>
+		</div>
+	</div>
+	<div class="pageFour text-center" id="four">
+		<h1 id="pageFour-header">Contact me</h1>
+		<hr>
+		<!--<ul style="list-style: none">-->
+		<!--    <form class="contact-form">-->
+		<!--        <li><span class="form-item">Name<input type="text" value="Name"/></span></li>-->
+		<!--        <li><span class="form-item">Email<input type="text" value="Email"/></span></li>-->
+		<!--        <li><span class="form-item">Message<textarea value="Message"/></span></li>-->
+		<!--    </form>-->
+		<!--</ul>-->
+		<div id="form-table">
+			<div class="row">
+				<div class="col-md-2 col-xs-4">
+					<span class="form-item">Name</span>
+				</div>
+				<div class="col-md-2 col-xs-8">
+					<input type="text" value="Name">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2 col-xs-4">
+					<span class="form-item">Email</span>
+				</div>
+				<div class="col-md-2 col-xs-8">
+					<input type="text" value="Email">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2 col-xs-4">
+					<span class="form-item">Message</span>
+				</div>
+				<div class="col-md-2 col-xs-8">
+					<textarea></textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="myfooter">
+		<p>Posted by: Nafissa Hassan</p>
+		<p>Contact information: <a href="mailto:nafissa_92@hotmail.com">nafissa_92@hotmail.com</a>.</p>
+	</footer>
 </body>
 </html>
